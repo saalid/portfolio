@@ -33,6 +33,11 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    </style>
 </head>
 
 <body>
@@ -631,15 +636,20 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
             @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-            <form class="php-email-form">
+              <div class="alert alert-danger" id="alert1">
+                <ul>
+                  @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                  @endforeach
+                </ul>
+              </div>
+            @endif
+           @if(session()->has('message'))
+              <div class="alert alert-success" id="alert1">
+                {{ session()->get('message') }}
+              </div>
+            @endif
+            <form action="/" method="POST" class="php-email-form">
                 @csrf
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -660,7 +670,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" id="ajaxSubmit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
                 
             </form>
           </div>
@@ -713,19 +723,16 @@
   <script src="assets/js/main.js"></script>
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
   </script>
-  
   <script>
-     jQuery('#ajaxSubmit').click(function(e){
-         console.log(e);
-        $.ajax({
-           type:'POST',
-           url:'/',
-           data:'_token = <?php echo csrf_token() ?>',
-           success:function(data) {
-              console.log(data)
-           }
-        });
-    });
+    if ($(".alert")[0]){
+      // $("html, body").animate({ scrollTop: $("#alert1").scrollTop() }, 1000);
+    // Do something if class exists
+    //$("#alert1").animate({ scrollTop: $("#alert1")[0].scrollHeight }, 1000);
+    //$("#alert1").animate({ scrollTop: $('#alert1').prop("scrollHeight")}, 1000);
+    window.scrollTo({ top: 4200, behavior: 'smooth' });
+} else {
+    // Do something if class does not exist
+}
   </script>
 </body>
 
