@@ -80,6 +80,18 @@
         <div class="section-title">
           <h2>About</h2>
           <p>Experienced Back End Developer with a demonstrated history of working in the Integrated systems. Skilled in PHP, HTML, Linux, AJAX, and Object-Oriented Programming (OOP). Strong engineering professional with a Master's degree focused in Computer Software Engineering from Imam Khomeini International University. </p>
+          <p>Develop, record and maintain cutting-edge web-based PHP applications on portal plus
+            premium service platforms, WordPress theme development.
+            <br>
+            Used wamp (windows, Apache, MySQL, and PHP) for development using Laravel/symphony.<br>
+            Responsible for design and development of web pages using HTML, CSS including Ajax.<br>
+            Added functionality as career timeline and media (images/video) upload using technology
+            HTML, jquery, javascript, CSS, and Laravel.<br>
+            Valuated data visualization technology, considering different tools such as d3. Js, google
+            charts.
+            Created middleware for user authentication and used blade templating engine for rendering
+            dynamic views
+          </p>
         </div>
 
         <div class="row">
@@ -326,18 +338,7 @@
 
         <div class="section-title">
           <h2>Work Experience</h2>
-          <ul>
-            <li>Develop, record and maintain cutting-edge web-based PHP applications on portal plus
-            premium service platforms, WordPress theme development.</li>
-            <li>Used wamp (windows, Apache, MySQL, and PHP) for development using Laravel/symphony.</li>
-            <li>Responsible for design and development of web pages using HTML, CSS including Ajax.</li>
-            <li>Added functionality as career timeline and media (images/video) upload using technology
-            HTML, jquery, javascript, CSS, and Laravel.</li>
-            <li>Valuated data visualization technology, considering different tools such as d3. Js, google
-            charts.</li>
-            <li>Created middleware for user authentication and used blade templating engine for rendering
-            dynamic views</li>
-          </ul>
+          <p><b>NOKARTO Company</b> : I worked as a web developer in Nocarto company, and during my time in this company, I developed an organizational panel for the company, and also created several sites with WordPress, which can be seen in my work experience section.</p>
           <br>
           <p><b>Pishro Afzar Saman Comoany</b> :  Currently, I am working as a developer of the passenger information system at Pishro Afzar Saman Company.
             Last year, I supported the PIS system of Metro 545 in line 4 of metro tehran.
