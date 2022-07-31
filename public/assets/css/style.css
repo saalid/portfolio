@@ -294,6 +294,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 992px) {
   #hero {
     text-align: center;
+    height: 75vh;
   }
   #hero h1 {
     font-size: 32px;
